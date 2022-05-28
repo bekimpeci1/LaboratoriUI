@@ -1,0 +1,42 @@
+ul > li {
+    display: block;
+    margin-top: 3.5rem;
+    font-size: 1.3rem;
+}
+
+.navLink:hover {
+    color: black;
+}
+
+ul > li:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#navbarDiv {
+    height: 130%;
+    max-width: 13rem;
+    margin: 0;
+    padding: 0;
+}
+#mainNavBar {
+    height: 82vh;
+}
+#bottomNav > img {
+    margin: 0 0 0.2rem 1.1rem;
+}
+
+#LogoAndName {
+    margin-top:1.2rem;
+}
+
+
+#mainDiv {
+    display: flex;
+}
+
+#mainBody {
+    margin-left: 6rem;
+    margin-top: 4rem;
+    width: 80%;
+}

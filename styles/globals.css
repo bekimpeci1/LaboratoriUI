@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.editData {
+  font-size: 1.1rem;
+}
+
+
+/*.toast {*/
+/*  position: absolute;*/
+/*  top: 10%;*/
+/*  right: 40%;*/
+/*}*/
+.globalToast {
+  position: absolute;
+  left: 75%;
+  z-index: 999;
+  bottom: 85%;
+}
+.toast-title {
+  margin-bottom: 0.1rem;
+  font-weight: bolder;
+}
+
+.toast-text-message {
+  font-weight: 500;
+}
+
+.fadingToast {
+  animation: fadeToast 1s ease-in-out;
+}
+
+
+
+@keyframes fadeToast {
+  0%{
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.25;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.partialModal-sm {
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid lightgray;
+  border-radius: 1%;
+  background: white;
+  height: 350px;
+  box-shadow:  5px 6px 71px -7px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.partialModal-lg {
+  width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid lightgray;
+  border-radius: 1%;
+  background-color: white;
+  height: 650px;
+  box-shadow:  5px 6px 71px -7px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.partialModal-md {
+  width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid lightgray;
+  border-radius: 1%;
+  background-color: white;
+  height: 550px;
+  box-shadow:  5px 6px 71px -7px rgba(0,0,0,0.2);
+  z-index: 10;
+
+}
+
+
+
+

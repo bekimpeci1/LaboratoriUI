@@ -1,0 +1,119 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+    position: fixed;
+}
+@media(max-height: 720px) {
+    .modalBackground {
+        overflow: scroll;
+    }
+    .modalContainer {
+        overflow: scroll;
+    }
+}
+@media(min-width:2200px) {
+    .modalContainer {
+        width: 40vw !important;
+    }
+    .modalBackground {
+        width: 90vw;
+        overflow-y: scroll;
+    }
+    .input-width {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media(max-width: 1000px) {
+    .modalContainer {
+        width: 95vw !important;
+    }
+    .modalBackground {
+        width: 100vw;
+        overflow-y: scroll;
+    }
+
+
+    .input-width {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.input-width {
+    width: 75%;
+    margin:auto
+}
+
+.modalContainer {
+    height: 50rem;
+    width: 60%;
+    border-radius: 12px;
+    background-color: white;
+   position: absolute;
+    bottom:10%;
+    left: 20%;
+    /* overflow-y: scroll; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 20px;
+    border: none;
+    background-color: #353835;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    background-color: crimson;
+}
+
+
+.title {
+    border-bottom: 1px solid lightgray;
+}

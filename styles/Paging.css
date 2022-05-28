@@ -1,0 +1,71 @@
+/* .paging {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top:10px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    background-color: rgb(233, 235, 235);
+}
+
+#firstPage {
+    margin-left: 65px;
+}
+ */
+
+
+#paging {
+    margin-left: 3rem;
+    position: relative;
+    background: #fff;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,2);
+    width: fit-content;
+    margin-top: 25px;
+}
+
+#paging > li {
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px;
+
+}
+
+#paging > li.pageNumber {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#paging  .pageNumber  .page {
+    display: block;
+    color: #777;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+#paging  li.pageNumber:hover  .page {
+    background: #333;
+    color: #fff;
+}
+
+#active {
+    background: #333;
+    color: #fff !important;
+    border-radius: 50%;
+}
+
+.prev  {
+    margin-right: 1.5rem;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.next {
+    margin-left: 1.5rem;
+    font-weight: 700;
+    font-size: 20px;
+}
